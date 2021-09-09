@@ -7,7 +7,7 @@ class Message(models.Model):
     recipient = models.OneToOneField(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     description = models.CharField(max_length=250)
-    time = models.TimeField()
+    timestamp = models.TimeField()
     read = models.BooleanField()
 
 
