@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "connection": 2,
-      "author": 1,
+      "description": "meeting with user to go over math",
       "created_on": 1629403224,
       "scheduled_date": 1629403255
     }
@@ -14,7 +14,7 @@
     "pk": 2,
     "fields": {
       "connection": 2,
-      "author": 1,
+      "description": "meeting with user to go over tech stuff",
       "created_on": 1629403333,
       "scheduled_date": 1629403666
     }

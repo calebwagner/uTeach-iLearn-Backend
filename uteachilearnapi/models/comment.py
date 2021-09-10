@@ -2,7 +2,7 @@ from django.db import models
 
 class Comment(models.Model):
     content = models.CharField( max_length=250)
-    timestamp = models.TimeField()
+    timestamp = models.IntegerField()
     author = models.ForeignKey("AppUser", on_delete=models.CASCADE)
     post = models.ForeignKey("Post", on_delete=models.CASCADE)
 

@@ -15,8 +15,8 @@
     "model": "uteachilearnapi.message",
     "pk": 2,
     "fields": {
-      "user": 2,
-      "recipient": 1,
+      "user": 1,
+      "recipient": 2,
       "title": "IMPORTANT",
       "description": "Teach me please",
       "read": false,

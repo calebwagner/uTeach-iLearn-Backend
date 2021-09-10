@@ -4,5 +4,13 @@
   "python.linting.pylintArgs": [
     "--load-plugins=pylint_django",
     "--django-settings-module=uteachilearn.settings"
+  ],
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "uteachilearn",
+      "database": "db.sqlite3"
+    }
   ]
 }
