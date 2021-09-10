@@ -1,0 +1,26 @@
+[
+  {
+    "model": "uteachilearn.post",
+    "pk": 1,
+    "fields": {
+      "title": "TITLE",
+      "category": 1,
+      "user": 1,
+      "image": "https://www.planetware.com/wpimages/2019/10/switzerland-in-pictures-most-beautiful-places-matterhorn.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "created_on": 1629403224
+    }
+  },
+  {
+    "model": "uteachilearn.post",
+    "pk": 2,
+    "fields": {
+      "title": "Another Title",
+      "category": 1,
+      "user": 1,
+      "image": "https://www.planetware.com/wpimages/2019/10/switzerland-in-pictures-most-beautiful-places-matterhorn.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "created_on": 1629403224
+    }
+  }
+]
