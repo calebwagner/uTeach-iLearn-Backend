@@ -80,20 +80,6 @@ class ConnectionView(ViewSet):
         except Exception as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-    def update(self, request, pk=None):
-        """Handle PUT requests for a connection
-        Returns:
-            Response -- Empty body with 204 status code
-        """
-        connection = Connection.objects.get(pk=pk)
-
-        connection.app_user = request.data["user"]
-        connection.profile = request.data["profile"]
-
-        connection.save()
-
-        return Response({}, status=status.HTTP_204_NO_CONTENT)
-
 
 class UserSerializer(serializers.ModelSerializer):
     """JSON serializer for users name"""
