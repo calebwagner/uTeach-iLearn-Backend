@@ -1,0 +1,26 @@
+[
+  {
+    "model": "uteachilearnapi.message",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "recipient": 1,
+      "title": "Our upcoming session",
+      "description": "This is all you need to bring.",
+      "read": false,
+      "timestamp": 1629403224
+    }
+  },
+  {
+    "model": "uteachilearnapi.message",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "recipient": 2,
+      "title": "IMPORTANT",
+      "description": "Teach me please",
+      "read": false,
+      "timestamp": 1629403224
+    }
+  }
+]

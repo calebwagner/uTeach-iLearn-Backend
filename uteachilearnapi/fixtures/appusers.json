@@ -1,0 +1,22 @@
+[
+  {
+    "model": "uteachilearnapi.appuser",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "bio": "I was once lost but now I am found thanks to this app.",
+      "image_url": "https://www.eguardtech.com/wp-content/uploads/2018/08/Network-Profile.png",
+      "is_teacher": false
+    }
+  },
+  {
+    "model": "uteachilearnapi.appuser",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "bio": "I'm still lost.",
+      "image_url": "https://www.eguardtech.com/wp-content/uploads/2018/08/Network-Profile.png",
+      "is_teacher": false
+    }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "model": "uteachilearnapi.comment",
+    "pk": 1,
+    "fields": {
+      "post": 1,
+      "author": 1,
+      "content": "I can help!",
+      "timestamp": 1629403224
+    }
+  },
+  {
+    "model": "uteachilearnapi.comment",
+    "pk": 2,
+    "fields": {
+      "post": 1,
+      "author": 1,
+      "content": "You got this man!",
+      "timestamp": 1629403225
+    }
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "model": "uteachilearnapi.category",
+    "pk": 1,
+    "fields": {
+      "title": "math",
+      "description": "Mathematics is the science and study of quality, structure, space, and change. Mathematicians seek out patterns, formulate new conjectures, and establish truth by rigorous deduction from appropriately chosen axioms and definitions."
+    }
+  },
+  {
+    "model": "uteachilearnapi.category",
+    "pk": 2,
+    "fields": {
+      "title": "science",
+      "description": "Science is the pursuit and application of knowledge and understanding of the natural and social world following a systematic methodology based on evidence."
+    }
+  },
+  {
+    "model": "uteachilearnapi.category",
+    "pk": 3,
+    "fields": {
+      "title": "technology",
+      "description": "Technology is the sum of any techniques, skills, methods, and processes used in the production of goods or services or in the accomplishment of objectives, such as scientific investigation."
+    }
+  },
+  {
+    "model": "uteachilearnapi.category",
+    "pk": 4,
+    "fields": {
+      "title": "engineering",
+      "description": "Engineering is the use of scientific principles to design and build machines, structures, and other items, including bridges, tunnels, roads, vehicles, and buildings."
+    }
+  }
+]
