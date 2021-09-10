@@ -69,6 +69,27 @@ class PostView(ViewSet):
         except ValidationError as ex:
             return Response({"reason": ex.message}, status=status.HTTP_400_BAD_REQUEST)
 
+    def update(self, request, pk=None):
+        """Handle POST operations for posts
+
+        Returns:
+            Response -- JSON serialized post instance
+        """
+        app_user = AppUser.objects.get(user=request.auth.user)
+        category = Category.objects.get(pk=request.data["category"])
+
+        post = Post.objects.get(pk=pk)
+        post.title = request.data["title"]
+        post.description = request.data["description"]
+        post.created_on = request.data["created_on"]
+        post.image = request.data["image"]
+        post.user = app_user
+        post.category = category
+        post.save()
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
+
+
     def destroy(self, request, pk=None):
         try:
             post = Post.objects.get(pk=pk)
