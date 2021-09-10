@@ -17,10 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
 from django.conf.urls import include
-from uteachilearnapi.views import register_user, login_user, PostView
+from uteachilearnapi.views import register_user, login_user, PostView, CategoryView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'posts', PostView, 'post')
+router.register(r'categories', CategoryView, 'category')
 
 
 urlpatterns = [
