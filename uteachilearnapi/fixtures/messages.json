@@ -1,6 +1,6 @@
 [
   {
-    "model": "rareapi.message",
+    "model": "uteachilearnapi.message",
     "pk": 1,
     "fields": {
       "user": 2,
@@ -12,7 +12,7 @@
     }
   },
   {
-    "model": "rareapi.message",
+    "model": "uteachilearnapi.message",
     "pk": 2,
     "fields": {
       "user": 2,

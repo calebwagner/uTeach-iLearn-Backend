@@ -1,6 +1,6 @@
 [
   {
-    "model": "rareapi.comment",
+    "model": "uteachilearnapi.comment",
     "pk": 1,
     "fields": {
       "post": 1,
@@ -10,7 +10,7 @@
     }
   },
   {
-    "model": "rareapi.comment",
+    "model": "uteachilearnapi.comment",
     "pk": 2,
     "fields": {
       "post": 1,

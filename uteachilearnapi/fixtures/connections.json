@@ -1,6 +1,6 @@
 [
   {
-    "model": "rareapi.connection",
+    "model": "uteachilearnapi.connection",
     "pk": 1,
     "fields": {
       "user": 1,

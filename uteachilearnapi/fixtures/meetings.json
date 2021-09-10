@@ -1,6 +1,6 @@
 [
   {
-    "model": "rareapi.meeting",
+    "model": "uteachilearnapi.meeting",
     "pk": 1,
     "fields": {
       "connection": 2,
@@ -10,7 +10,7 @@
     }
   },
   {
-    "model": "rareapi.meeting",
+    "model": "uteachilearnapi.meeting",
     "pk": 2,
     "fields": {
       "connection": 2,
