@@ -2,6 +2,7 @@
 from django.contrib.auth.models import User
 from django.db import connection
 from rest_framework import status
+from django.http import HttpResponseServerError
 from rest_framework.decorators import action
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
@@ -31,6 +32,19 @@ class ProfileView(ViewSet):
         }
 
         return Response(profile)
+
+    def retrieve(self, request, pk=None):
+        """Handle GET requests for single post
+
+        Returns:
+            Response -- JSON serialized post instance
+        """
+        try:
+            app_user = AppUser.objects.get(pk=pk)
+            serializer = AppUserSerializer(app_user, context={'request': request})
+            return Response(serializer.data)
+        except Exception as ex:
+            return HttpResponseServerError(ex)
 
 class UserSerializer(serializers.ModelSerializer):
     """JSON serializer for gamer's related Django user"""
