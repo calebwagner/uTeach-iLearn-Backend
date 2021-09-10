@@ -8,5 +8,15 @@
       "profile_url": "https://www.eguardtech.com/wp-content/uploads/2018/08/Network-Profile.png",
       "is_teacher": false
     }
+  },
+  {
+    "model": "rareapi.appuser",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "bio": "I'm still lost.",
+      "profile_url": "https://www.eguardtech.com/wp-content/uploads/2018/08/Network-Profile.png",
+      "is_teacher": false
+    }
   }
 ]
