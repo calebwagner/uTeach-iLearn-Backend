@@ -1,0 +1,22 @@
+[
+  {
+    "model": "rareapi.comment",
+    "pk": 1,
+    "fields": {
+      "post": 1,
+      "author": 1,
+      "content": "just do it!",
+      "timestamp": 1629403224
+    }
+  },
+  {
+    "model": "rareapi.comment",
+    "pk": 2,
+    "fields": {
+      "post": 1,
+      "author": 1,
+      "content": "don't just do it!",
+      "timestamp": 1629403225
+    }
+  }
+]
