@@ -3,7 +3,7 @@
     "model": "uteachilearnapi.post",
     "pk": 1,
     "fields": {
-      "title": "TITLE",
+      "title": "Help me learn math",
       "category": 1,
       "user": 1,
       "image": "https://www.planetware.com/wpimages/2019/10/switzerland-in-pictures-most-beautiful-places-matterhorn.jpg",
@@ -15,7 +15,7 @@
     "model": "uteachilearnapi.post",
     "pk": 2,
     "fields": {
-      "title": "Another Title",
+      "title": "Help me learn programming",
       "category": 1,
       "user": 1,
       "image": "https://www.planetware.com/wpimages/2019/10/switzerland-in-pictures-most-beautiful-places-matterhorn.jpg",

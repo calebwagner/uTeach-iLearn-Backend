@@ -5,8 +5,8 @@
     "fields": {
       "user": 2,
       "recipient": 1,
-      "title": "you got this!",
-      "description": "you do you",
+      "title": "Our upcoming session",
+      "description": "This is all you need to bring.",
       "read": false,
       "timestamp": 1629403224
     }

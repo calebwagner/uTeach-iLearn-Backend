@@ -6,5 +6,13 @@
       "user": 1,
       "profile": 2
     }
+  },
+  {
+    "model": "uteachilearnapi.connection",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "profile": 1
+    }
   }
 ]
