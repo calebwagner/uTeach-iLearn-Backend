@@ -1,0 +1,22 @@
+[
+  {
+    "model": "rareapi.meeting",
+    "pk": 1,
+    "fields": {
+      "connection": 2,
+      "author": 1,
+      "created_on": 1629403224,
+      "scheduled_date": 1629403255
+    }
+  },
+  {
+    "model": "rareapi.meeting",
+    "pk": 2,
+    "fields": {
+      "connection": 2,
+      "author": 1,
+      "created_on": 1629403333,
+      "scheduled_date": 1629403666
+    }
+  }
+]
