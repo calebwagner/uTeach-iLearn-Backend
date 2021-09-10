@@ -1,0 +1,30 @@
+[
+  {
+    "model": "uteachilearnapi.category",
+    "pk": 1,
+    "fields": {
+      "label": "math"
+    }
+  },
+  {
+    "model": "uteachilearnapi.category",
+    "pk": 2,
+    "fields": {
+      "label": "science"
+    }
+  },
+  {
+    "model": "uteachilearnapi.category",
+    "pk": 3,
+    "fields": {
+      "label": "technology"
+    }
+  },
+  {
+    "model": "uteachilearnapi.category",
+    "pk": 4,
+    "fields": {
+      "label": "engineering"
+    }
+  }
+]
