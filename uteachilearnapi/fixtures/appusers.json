@@ -1,0 +1,12 @@
+[
+  {
+    "model": "rareapi.appuser",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "bio": "I was once lost but now I am found thanks to this app.",
+      "profile_url": "https://www.eguardtech.com/wp-content/uploads/2018/08/Network-Profile.png",
+      "is_teacher": false
+    }
+  }
+]
