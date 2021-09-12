@@ -6,7 +6,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework import status
 
-from uteachilearnapi.models import AppUser, app_user
+from uteachilearnapi.models import AppUser
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
@@ -59,7 +59,7 @@ def register_user(request):
     app_user = AppUser.objects.create(
         bio=request.data['bio'],
         image_url=request.data['image_url'],
-        is_teacher=request.data['is_teacher'],
+        # is_teacher=request.data['is_teacher'],
         user=new_user
     )
 
