@@ -7,8 +7,8 @@ class Message(models.Model):
     recipient = models.ForeignKey("AppUser", related_name='recipient', on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     description = models.CharField(max_length=250)
-    timestamp = models.ImageField()
-    read = models.BooleanField()
+    timestamp = models.IntegerField()
+    read = models.BooleanField(default=False)
 
 
 
