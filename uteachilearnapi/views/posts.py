@@ -84,7 +84,7 @@ class PostView(ViewSet):
         post.created_on = request.data["created_on"]
         post.image = request.data["image"]
         post.user = app_user
-        category = Category.objects.get(pk=request.data["category"])
+        # category = Category.objects.get(pk=request.data["category"])
         post.category = category
         post.save()
 
