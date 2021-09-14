@@ -3,6 +3,7 @@
     "model": "uteachilearnapi.meeting",
     "pk": 1,
     "fields": {
+      "scheduler": 1,
       "connection": 2,
       "description": "meeting with user to go over math",
       "created_on": 1629403224,
@@ -13,7 +14,8 @@
     "model": "uteachilearnapi.meeting",
     "pk": 2,
     "fields": {
-      "connection": 2,
+      "scheduler": 2,
+      "connection": 1,
       "description": "meeting with user to go over tech stuff",
       "created_on": 1629403333,
       "scheduled_date": 1629403666

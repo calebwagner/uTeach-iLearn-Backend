@@ -23,7 +23,7 @@ class MessageView(ViewSet):
             Response -- JSON serialized list of posts
         """
         # Get all game records from the database
-        messages = Message.objects.all()
+        messages = Message.objects.filter(recipient_id=request.auth.user.id)
 
         serializer = MessageSerializer(
             messages, many=True, context={'request': request})
