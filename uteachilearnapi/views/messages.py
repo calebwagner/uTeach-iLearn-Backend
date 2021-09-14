@@ -107,7 +107,7 @@ class UserSerializer(serializers.ModelSerializer):
     """JSON serializer for users name"""
     class Meta:
         model = User
-        fields = ['first_name', 'last_name', 'email']
+        fields = ['id','first_name', 'last_name', 'email']
 
 
 class AppUserSerializer(serializers.ModelSerializer):
@@ -116,7 +116,7 @@ class AppUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AppUser
-        fields = ['user']
+        fields = ['id','user']
 
 class RecipientSerializer(serializers.ModelSerializer):
     """JSON serializer for users"""
@@ -124,7 +124,7 @@ class RecipientSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AppUser
-        fields = ['user']
+        fields = ['id','user']
 
 class MessageSerializer(serializers.ModelSerializer):
     """JSON serializer for posts"""
