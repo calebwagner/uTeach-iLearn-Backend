@@ -19,9 +19,9 @@ class ProfileView(ViewSet):
         Returns:
             Response -- JSON representation of user info and events
         """
-        app_user = AppUser.objects.get(user=request.auth.user)
+        app_user = AppUser.objects.get(user_id=request.auth.user.id)
 
-        app_user = AppUserSerializer(app_user, many=True, context={'request': request})
+        app_user = AppUserSerializer(app_user, many=False, context={'request': request})
 
         profile = {
         'app_user': app_user.data,

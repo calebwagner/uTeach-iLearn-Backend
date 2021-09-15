@@ -7,7 +7,7 @@
       "connection": 2,
       "description": "meeting with user to go over math",
       "created_on": 1629403224,
-      "scheduled_date": 1629403255
+      "scheduled_date": "10/2/2021"
     }
   },
   {
@@ -18,7 +18,7 @@
       "connection": 1,
       "description": "meeting with user to go over tech stuff",
       "created_on": 1629403333,
-      "scheduled_date": 1629403666
+      "scheduled_date": "09/20/2021"
     }
   }
 ]
