@@ -46,7 +46,7 @@ class ConnectionView(ViewSet):
         Returns:
             Response -- JSON serialized list of connection
         """
-        connection = Connection.objects.all()
+        connection = Connection.objects.filter(user_id=request.auth.user.id)
 
         serializer = ConnectionSerializer(connection, many=True, context={'request': request})
         return Response(serializer.data)
@@ -116,3 +116,4 @@ class ConnectionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Connection
         fields = ('id', 'user', 'profile')
+        depth: 1
