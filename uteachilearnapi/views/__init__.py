@@ -7,3 +7,4 @@ from .profile import ProfileView
 from .messages import MessageView
 from .users import UserView
 from .meetings import MeetingView
+from .authors import AuthorView
