@@ -26,12 +26,12 @@ class ConnectionView(ViewSet):
             Response -- JSON serialized connections instance
         """
         user = AppUser.objects.get(user=request.auth.user)
-        profile = AppUser.objects.get(user=request.auth.user)
+        # profile = AppUser.objects.get(pk=request.data['profile'])
 
 
         connection = Connection()
         connection.user = user
-        connection.profile = profile
+        connection.profile = AppUser.objects.get(pk=request.data['profile'])
 
         try:
             connection.save()

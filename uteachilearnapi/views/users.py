@@ -13,22 +13,6 @@ from uteachilearnapi.models import AppUser, Connection
 class UserView(ViewSet):
     """Gamer can see profile information"""
 
-    # def list(self, request):
-    #     """Handle GET requests to profile resource
-
-    #     Returns:
-    #         Response -- JSON representation of user info and events
-    #     """
-    #     app_user = AppUser.objects.all()
-
-    #     app_user = AppUserSerializer(app_user, many=True, context={'request': request})
-
-    #     profile = {
-    #     'app_user': app_user.data,
-    #     }
-
-    #     return Response(profile)
-
     def list(self, request):
         """Handle GET requests to posts resource
 
