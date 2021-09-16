@@ -24,6 +24,7 @@ class MeetingView(ViewSet):
 
         meeting = Meeting()
         meeting.connection = Connection.objects.get(pk=request.data['connection'])
+        # meeting.connection = AppUser.objects.get(pk=request.data['connection'])
         meeting.description = request.data["description"]
         meeting.created_on = request.data["created_on"]
         meeting.scheduled_date = request.data["scheduled_date"]
