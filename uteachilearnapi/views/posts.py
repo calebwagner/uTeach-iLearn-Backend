@@ -76,7 +76,6 @@ class PostView(ViewSet):
             Response -- JSON serialized post instance
         """
         app_user = AppUser.objects.get(user=request.auth.user)
-        category = Category.objects.get(pk=request.data["category"])
 
         post = Post.objects.get(pk=pk)
         post.title = request.data["title"]
@@ -84,7 +83,7 @@ class PostView(ViewSet):
         post.created_on = request.data["created_on"]
         post.image = request.data["image"]
         post.user = app_user
-        # category = Category.objects.get(pk=request.data["category"])
+        category = Category.objects.get(pk=request.data["category"])
         post.category = category
         post.save()
 
@@ -109,7 +108,7 @@ class UserSerializer(serializers.ModelSerializer):
     """JSON serializer for users name"""
     class Meta:
         model = User
-        fields = ['id','first_name', 'last_name', 'email']
+        fields = ['first_name', 'last_name', 'email']
 
 
 class AppUserSerializer(serializers.ModelSerializer):
