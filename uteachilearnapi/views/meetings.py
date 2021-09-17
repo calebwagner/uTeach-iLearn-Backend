@@ -97,11 +97,11 @@ class AppUserSerializer(serializers.ModelSerializer):
 
 class ConnectionSerializer(serializers.ModelSerializer):
     """JSON serializer for users"""
-    user = AppUserSerializer(many=False)
+    profile = AppUserSerializer(many=False)
 
     class Meta:
         model = Connection
-        fields = ['id','user', 'profile']
+        fields = ['id', 'profile']
 
 class MeetingSerializer(serializers.ModelSerializer):
     """JSON serializer for posts"""
