@@ -74,15 +74,15 @@ class MessageView(ViewSet):
         Returns:
             Response -- JSON serialized post instance
         """
-        user = AppUser.objects.get(user=request.auth.user)
-        recipient = Message.objects.get(user=request.auth.user)
+        sender = AppUser.objects.get(user=request.auth.user)
 
         message = Message.objects.get(pk=pk)
         message.title = request.data["title"]
         message.description = request.data["description"]
         message.timestamp = request.data["timestamp"]
         message.read = request.data["read"]
-        message.user = user
+        message.user = sender
+        recipient = AppUser.objects.get(pk=request.data["recipient"])
         message.recipient = recipient
         message.save()
 
@@ -134,6 +134,6 @@ class MessageSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Message
-        fields = ('id', 'title', 'user', 'recipient',
+        fields = ('id', 'title', 'read', 'user', 'recipient',
                   'timestamp', 'description')
         depth = 1
