@@ -37,6 +37,7 @@ class SavedPostsView(ViewSet):
         except ValidationError as ex:
             return Response({"reason": ex.message}, status=status.HTTP_400_BAD_REQUEST)
 
+
     def destroy(self, request, pk=None):
         """Handle DELETE requests for a single connection
         Returns:
