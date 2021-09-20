@@ -19,7 +19,7 @@ class SavedPostsView(ViewSet):
         
         Returns JSON serialized list of authors
         """
-        saved_posts = SavePost.objects.all()
+        saved_posts = SavePost.objects.filter(user_id=request.auth.user.id)
         serializer = SavedPostsSerializer(
             saved_posts, many=True, context={'request': request})
         return Response(serializer.data)
