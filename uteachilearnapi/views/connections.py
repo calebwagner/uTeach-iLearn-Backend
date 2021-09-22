@@ -95,7 +95,7 @@ class AppUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AppUser
-        fields = ['id','user']
+        fields = ['id','user', 'image_url']
 
 class ProfileSerializer(serializers.ModelSerializer):
     """JSON serializer for users"""
@@ -103,7 +103,7 @@ class ProfileSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AppUser
-        fields = ['id','user']
+        fields = ['id','user', 'image_url']
 
 class ConnectionSerializer(serializers.ModelSerializer):
     """JSON serializer for connection
