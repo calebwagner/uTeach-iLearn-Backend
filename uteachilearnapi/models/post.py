@@ -6,7 +6,6 @@ class Post(models.Model):
     category = models.ForeignKey("Category", on_delete=models.CASCADE)
     user = models.ForeignKey("AppUser", on_delete=models.CASCADE)
     created_on = models.IntegerField()
-    image = models.ImageField()
     description = models.CharField(max_length=500)
 
     def __str__(self):

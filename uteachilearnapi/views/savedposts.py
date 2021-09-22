@@ -91,7 +91,7 @@ class AppUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AppUser
-        fields = ['id','user']
+        fields = ['id','user', 'image_url']
 
 class PostSerializer(serializers.ModelSerializer):
     """JSON serializer for posts"""
