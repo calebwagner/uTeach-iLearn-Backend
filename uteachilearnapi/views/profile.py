@@ -54,7 +54,7 @@ class AppUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AppUser
-        fields = ['user', 'bio']
+        fields = ['user', 'bio', 'image_url']
 
 # class ProfileSerializer(serializers.ModelSerializer):
 #     """JSON serializer for gamers"""
