@@ -58,7 +58,6 @@ class PostView(ViewSet):
         post.title = request.data["title"]
         post.description = request.data["description"]
         post.created_on = request.data["created_on"]
-        post.image = request.data["image"]
         post.user = app_user
         post.category = category
 
@@ -81,7 +80,6 @@ class PostView(ViewSet):
         post.title = request.data["title"]
         post.description = request.data["description"]
         post.created_on = request.data["created_on"]
-        post.image = request.data["image"]
         post.user = app_user
         category = Category.objects.get(pk=request.data["category"])
         post.category = category
@@ -117,7 +115,7 @@ class AppUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AppUser
-        fields = ['id','user']
+        fields = ['id','user', 'image_url']
 
 
 class PostSerializer(serializers.ModelSerializer):
@@ -127,5 +125,5 @@ class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
         fields = ('id', 'title', 'category', 'user',
-                  'created_on', 'image', 'description')
+                  'created_on', 'description')
         depth = 1

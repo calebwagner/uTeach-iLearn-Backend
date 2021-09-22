@@ -4,8 +4,8 @@
     "pk": 1,
     "fields": {
       "user": 1,
-      "bio": "I was once lost but now I am found thanks to this app.",
-      "image_url": "https://www.eguardtech.com/wp-content/uploads/2018/08/Network-Profile.png"
+      "bio": "Subtly charming problem solver. Beer nerd. Alcohol fan. Wannabe creator. Total internetaholic. Zombie lover.",
+      "image_url": "media/images/profile-image1.jpg"
     }
   },
   {
@@ -13,8 +13,8 @@
     "pk": 2,
     "fields": {
       "user": 2,
-      "bio": "I'm still lost.",
-      "image_url": "https://www.eguardtech.com/wp-content/uploads/2018/08/Network-Profile.png"
+      "bio": "Unapologetic alcoholaholic. Tv fanatic. Social media lover. Food aficionado. Troublemaker. Internet geek. Amateur travel junkie. Award-winning writer. Web guru.",
+      "image_url": "media/images/profile-image2.jpg"
     }
   }
 ]

@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
 from django.conf.urls import include
+from django.conf import settings
+from django.conf.urls.static import static
 from uteachilearnapi.views import register_user, login_user, PostView, CategoryView, ConnectionView, ProfileView, MessageView, UserView, MeetingView, AuthorView, SavedPostsView
 
 router = routers.DefaultRouter(trailing_slash=False)
@@ -37,4 +39,4 @@ urlpatterns = [
     path('login', login_user),
     path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
 
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
