@@ -5,7 +5,7 @@
     "fields": {
       "user": 1,
       "bio": "Subtly charming problem solver. Beer nerd. Alcohol fan. Wannabe creator. Total internetaholic. Zombie lover.",
-      "image_url": "media/images/profile-image1.jpg"
+      "image_url": "media/images/profile-image4.jpg"
     }
   },
   {
@@ -14,7 +14,7 @@
     "fields": {
       "user": 2,
       "bio": "Unapologetic alcoholaholic. Tv fanatic. Social media lover. Food aficionado. Troublemaker. Internet geek. Amateur travel junkie. Award-winning writer. Web guru.",
-      "image_url": "media/images/profile-image2.jpg"
+      "image_url": "media/images/profile-image3.jpg"
     }
   }
 ]
