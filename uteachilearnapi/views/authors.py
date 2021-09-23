@@ -56,4 +56,4 @@ class AppUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AppUser
-        fields = ['id','user', 'bio']
+        fields = ['id','user', 'bio', 'image_url']
