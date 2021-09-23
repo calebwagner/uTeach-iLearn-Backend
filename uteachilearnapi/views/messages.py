@@ -74,7 +74,9 @@ class MessageView(ViewSet):
         Returns:
             Response -- JSON serialized post instance
         """
-        sender = AppUser.objects.get(user=request.auth.user)
+        # sender = AppUser.objects.get(user=request.auth.user)
+        sender = AppUser.objects.get(user__id=request.data["user"])
+
 
         message = Message.objects.get(pk=pk)
         message.title = request.data["title"]
