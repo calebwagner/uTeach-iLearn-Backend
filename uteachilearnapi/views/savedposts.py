@@ -100,7 +100,7 @@ class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
         fields = ('id', 'title', 'category', 'user',
-                  'created_on', 'image', 'description')
+                  'created_on', 'description')
         depth = 1
 
 class SavedPostsSerializer(serializers.ModelSerializer):
