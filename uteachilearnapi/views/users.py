@@ -19,7 +19,6 @@ class UserView(ViewSet):
         Returns:
             Response -- JSON serialized list of posts
         """
-        # Get all game records from the database
         users = AppUser.objects.all()
 
         serializer = ProfileSerializer(
@@ -61,24 +60,3 @@ class ProfileSerializer(serializers.ModelSerializer):
         model = AppUser
         fields = ('id', 'user','image_url')
         depth = 1
-
-
-
-
-# class ConnectionSerializer(serializers.ModelSerializer):
-#     """JSON serializer for gamers"""
-#     user = AppUserSerializer(many=False)
-
-#     class Meta:
-#         model = Connection
-#         fields = ('id', 'user', 'profile')
-
-
-# class ProfileSerializer(serializers.ModelSerializer):
-#     """JSON serializer for gamers"""
-#     user = UserSerializer(many=False)
-#     connection = ConnectionSerializer(many=False)
-
-#     class Meta:
-#         model = Connection
-#         fields = ('id', 'connection', 'user')
