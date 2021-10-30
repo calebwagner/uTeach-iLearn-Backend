@@ -7,7 +7,7 @@ from rest_framework.decorators import action
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
-from uteachilearnapi.models import AppUser, Connection
+from uteachilearnapi.models import AppUser
 
 
 class ProfileView(ViewSet):
@@ -55,31 +55,3 @@ class AppUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = AppUser
         fields = ['user', 'bio', 'image_url']
-
-# class ProfileSerializer(serializers.ModelSerializer):
-#     """JSON serializer for gamers"""
-#     user = UserSerializer(many=False)
-
-#     class Meta:
-#         model = Connection
-#         fields = ('id', 'user')
-
-
-
-# class ConnectionSerializer(serializers.ModelSerializer):
-#     """JSON serializer for gamers"""
-#     user = AppUserSerializer(many=False)
-
-#     class Meta:
-#         model = Connection
-#         fields = ('id', 'user', 'profile')
-
-
-# class ProfileSerializer(serializers.ModelSerializer):
-#     """JSON serializer for gamers"""
-#     user = UserSerializer(many=False)
-#     connection = ConnectionSerializer(many=False)
-
-#     class Meta:
-#         model = Connection
-#         fields = ('id', 'connection', 'user')

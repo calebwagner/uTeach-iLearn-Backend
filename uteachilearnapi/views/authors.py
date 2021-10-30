@@ -11,7 +11,7 @@ from django.contrib.auth.models import User
 from rest_framework.decorators import action
 
 class AuthorView(ViewSet):
-    """Rare Authors"""
+    """uTeachiLearn Authors"""
 
     def list(self, request):
         """Handle GET requests to authors resource
@@ -45,13 +45,13 @@ class AuthorView(ViewSet):
             return Response({'message': ex.args[0]})
 
 class UserSerializer(serializers.ModelSerializer):
-    """JSON serializer for gamer's related Django user"""
+    """JSON serializer for Django users"""
     class Meta:
         model = User
         fields = ('id','first_name', 'last_name', 'username')
 
 class AppUserSerializer(serializers.ModelSerializer):
-    """JSON serializer for users"""
+    """JSON serializer for app users"""
     user = UserSerializer(many=False)
 
     class Meta:

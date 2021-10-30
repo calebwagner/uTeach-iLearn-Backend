@@ -1,5 +1,5 @@
-"""View module for handling requests about posts"""
-import re
+"""View module for handling requests about Messages"""
+# import re
 from django.http import HttpResponseServerError
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
@@ -7,22 +7,21 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
-from uteachilearnapi.models.post import Post
+# from uteachilearnapi.models.post import Post
 from uteachilearnapi.models.app_user import AppUser
-from uteachilearnapi.models.category import Category
+# from uteachilearnapi.models.category import Category
 from uteachilearnapi.models.message import Message
 
 
 class MessageView(ViewSet):
-    """uTeachiLearn Posts"""
+    """uTeachiLearn Messages"""
 
     def list(self, request):
-        """Handle GET requests to posts resource
+        """Handle GET requests to messages resource
 
         Returns:
-            Response -- JSON serialized list of posts
+            Response -- JSON serialized list of messages
         """
-        # Get all game records from the database
         messages = Message.objects.filter(recipient_id=request.auth.user.id)
 
         serializer = MessageSerializer(
@@ -30,10 +29,10 @@ class MessageView(ViewSet):
         return Response(serializer.data)
 
     def retrieve(self, request, pk=None):
-        """Handle GET requests for single post
+        """Handle GET requests for single message
 
         Returns:
-            Response -- JSON serialized post instance
+            Response -- JSON serialized message instance
         """
         try:
             message = Message.objects.get(pk=pk)
@@ -43,16 +42,12 @@ class MessageView(ViewSet):
             return HttpResponseServerError(ex)
 
     def create(self, request):
-        """Handle POST operations for posts
+        """Handle POST operations for messages
 
         Returns:
-            Response -- JSON serialized post instance
+            Response -- JSON serialized message instance
         """
         sender = AppUser.objects.get(user=request.auth.user)
-        # recipient = Message.objects.get(pk=request.data["recipient"])
-        # recipient = AppUser.objects.get(user=request.auth.user)
-
-
         message = Message()
         message.title = request.data["title"]
         message.description = request.data["description"]
@@ -69,15 +64,12 @@ class MessageView(ViewSet):
             return Response({"reason": ex.message}, status=status.HTTP_400_BAD_REQUEST)
 
     def update(self, request, pk=None):
-        """Handle POST operations for posts
+        """Handle POST operations for messages
 
         Returns:
-            Response -- JSON serialized post instance
+            Response -- JSON serialized message instance
         """
-        # sender = AppUser.objects.get(user=request.auth.user)
         sender = AppUser.objects.get(user__id=request.data["user"])
-
-
         message = Message.objects.get(pk=pk)
         message.title = request.data["title"]
         message.description = request.data["description"]
@@ -136,6 +128,5 @@ class MessageSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Message
-        fields = ('id', 'title', 'read', 'user', 'recipient',
-                  'timestamp', 'description')
+        fields = ('id', 'title', 'read', 'user', 'recipient', 'timestamp', 'description')
         depth = 1
