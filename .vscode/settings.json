@@ -12,5 +12,6 @@
       "name": "uteachilearn",
       "database": "db.sqlite3"
     }
-  ]
+  ],
+  "python.formatting.provider": "black"
 }
