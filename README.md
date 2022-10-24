@@ -1,4 +1,4 @@
-`# uTeach iLearn Server
+# uTeach iLearn Server
 
 This repo contains the back-end code for the uTeachiLearn client app.
 
