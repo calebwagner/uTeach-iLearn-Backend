@@ -2,6 +2,9 @@
 
 This repo contains the back-end code for the uTeachiLearn client app.
 
+## ERD
+![TeachMe](https://user-images.githubusercontent.com/81569328/200386797-044ef4d6-5acb-4337-94b0-6f4c2c074e4c.png)
+
 Click [here](https://github.com/calebwagner/uTeach-iLearn-UI) to view to UI repo for this app.
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
