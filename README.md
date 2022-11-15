@@ -14,3 +14,4 @@ Click [here](https://github.com/calebwagner/uTeach-iLearn-UI) to view to UI repo
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
  
+⚠️⚠️ I'll put steps to build locally here after I finish transitioning to database from SQLite to MySQL ... ⚠️⚠️
